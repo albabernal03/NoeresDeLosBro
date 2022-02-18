@@ -1,0 +1,39 @@
+Algoritmo calcular media
+#Vamos a calcular la media y en función de el resultaldo lo clasificamos
+
+Entrada
+ nota 1: real
+ nota 2: real
+ nota 3: real
+ nota 4: real
+ media: real
+
+Resultado: real
+
+Precondición 
+
+ 0 ≤ nota 1 ≤ 20
+ 0 ≤ nota 2 ≤ 20
+ 0 ≤ nota 3 ≤ 20
+ 0 ≤ nota 4 ≤ 20
+ media ≥ 0
+
+
+Realización
+
+  media = (nota1 + nota2 + nota3 + nota4)/4
+  si media > 15 entonces 
+    resultado <-- "Alumno con talento"
+  si no si 12 < media < 15 entonces 
+    resultado <-- "Alumno con capacidad"
+  si no 
+    #media < 12 entonces
+    resultado <-- "Alumno debe reorientarse"
+  fin si 
+
+Poscondición
+  media > 15 --> Resultado = "Alumno con talento"
+  12 < media < 15 --> Resultado = "Alumno con capacidad"
+  media < 12 --> Resultado = "Alumno debe reorientarse"
+
+Fin calcular media

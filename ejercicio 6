@@ -1,0 +1,37 @@
+Algoritmo precio (con descuento) por cantidad microprocesadores
+#vamos a calcular el precio con el descuento dependiendo de la cantidad de microprocesadores que se compren
+
+Entrada
+ precio: real
+ empresa 1:
+ empresa 2:
+
+Resultado: real
+
+Precondición
+ precio ≥ 0
+ 
+Realización
+  si 10000 < precio < 20000 entonces
+   resultado <-- precio - (precio x 0.10)
+  si no si 20001 < precio < 40000 entonces
+   resultado <-- precio - (precio x 0.15)
+  si no
+  #precio > 40000
+   resultado <-- precio - (precio x 0.2)
+  fin si
+
+Poscondición
+
+
+Algoritmo precio (con descuento) por procedencia cliente 
+#vamos a calcular el precio con el descuento dependiendo de la procedencia del cliente 
+
+Entrada
+ precio_cliente: real
+
+
+
+
+
+

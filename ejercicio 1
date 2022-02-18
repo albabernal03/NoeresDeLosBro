@@ -1,0 +1,25 @@
+algoritmo: día_sucesor
+Entrada
+d: días {lunes; martes; miércoles; jueves; viernes; sábado; domingo}
+Precondición
+  ninguna
+Realización
+  (antiguo d = lunes-> d= martes)
+  o si no
+  (antiguo d = martes-> d= miércoles)
+  o si no
+  (antiguo d = miércoles-> d= jueves)
+  o si no
+  (antiguo d = jueves-> d= viernes)
+  o si no
+  (antiguo d = viernes-> d= sábado)
+  o si no
+  (antiguo d = sábado-> d= domingo)
+  o si no
+  (antiguo d = domingo-> d= lunes)
+  fin si
+
+Poscondición
+  d= sucesor del valor antiguo de d
+
+fin día_sucesor

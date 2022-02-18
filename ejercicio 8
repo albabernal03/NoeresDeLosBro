@@ -1,0 +1,36 @@
+algoritmo: prima_anual
+Entrada
+
+  variable
+    euro = €
+    kilómetro = km
+    años = a
+Precondición
+  prima_accidentes ≥ 0
+  prima ≥ 0
+Realización
+  si responsabilidad_accidente < 20% entonces
+  prima_accidentes = 0
+  si responsabilidad_accidente > 20% entonces
+  prima_accidentes > 0 
+    si num_accidentes = 2
+    prima_accidentes = prima_accidentes / 2
+    si num_accidentes = 3
+    prima_accidentes = prima_accidentes / 3
+    si num_accidentes > 3
+    prima_accidentes = prima
+
+  prima = prima_distancia + prima_antigüedad
+    prima_distancia = (o,o1 x €) x km hasta 400 €
+
+    prima_antigüedad(a partir 4 años) = 200 € + a x 20 €
+
+  prima_anual = prima - prima_accidentes
+
+Poscondición
+  prima_anual = prima - prima_accidentes
+  responsabilidad_accidente < 20% -> prima_accidentes =0
+  responsabilidad_accidente > 20% -> prima_accidentes >0
+  prima = prima_distancia + prima_antigüedad
+
+fin prima_anual

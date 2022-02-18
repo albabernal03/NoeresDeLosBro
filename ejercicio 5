@@ -1,0 +1,37 @@
+Algoritmo calcular descuento por hijo
+#vamos a calcular el descuento que se aplica en el Parque Warner Madrid según la cantidad de hijos por familia
+
+Entrada 
+ hijo: entero
+ precio: real 
+
+Resultado: real
+
+Precondición
+ precio ≥ 0
+ hijo ≥ 0
+
+Realización 
+
+ si hijo = 0 o 1 entonces 
+  resultado = precio
+ si no si hijo = 2 entonces 
+  resultado <-- precio - (precio x 0.1)
+ si no si hijo = 3 entonces
+  resultado <-- precio - (precio x 0.15)
+ si no si hijo = 4 entonces 
+  resultado <-- precio - (precio x 0.18)
+ si no
+  #hijo ≥ 5 
+  precio - [precio x (0.18 + 0.01 x hijo)]
+ fin si 
+
+Poscondición
+ hijo = 0 --> Resultado = precio
+ hijo = 1 --> Resultado = precio
+ hijo = 2 --> Resultado = precio - (precio x 0.1)
+ hijo = 3 --> Resultado = precio - (precio x 0.15)
+ hijo = 4 --> Resultado = precio - (precio x 0.18)
+ hijo ≥ 5 --> Resultado = precio - [precio x (0.18 + 0.01 x hijo)]
+
+ Fin calcular descuento por hijo

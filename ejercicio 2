@@ -1,0 +1,25 @@
+algoritmo: ordenar4
+  #ordenar a y b con la suma y el producto en orden creciente
+Entrada
+  a,b: T -> COMPARABLE
+variable
+  c,d: (T, +, x) -> COMPARABLE
+Precondición
+  ninguna
+Realización
+  si a > b entonces intercambiar (a,b) fin si #añadimos c
+  si b > c entonces intercambiar (b,c) fin si 
+  si a > b entonces intercambiar (a,b) fin si # a < b < c, añadimos d
+  si  c > d entonces intercambiar (c,d) fin si
+  si a > b entonces intercambiar (a,b) fin si # a < b < c < d
+  c <- a + b; d <- a x b
+ fin si 
+
+poscondición
+  a < b < c < d
+
+fin ordenar4 
+
+
+
+ 
